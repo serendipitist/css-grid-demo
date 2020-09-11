@@ -1,0 +1,35 @@
+.container {
+	height: 100%;
+	display: grid;
+	grid-gap: 3px;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 200px;
+	grid-template-areas:
+			"head head head head head head head head head head head head"
+			"side side main main main main main main main main main main"
+			"side side main main main main main main main main main main"
+      "foot foot foot foot foot foot foot foot foot foot foot foot"
+}
+
+.header {
+	grid-area: head;
+}
+
+.main {
+	grid-area: main;
+	background-color: #ffcc5c;
+}
+
+.ads {
+	grid-area: ads;
+	background-color: #ff6f69;
+}
+
+.side {
+	grid-area: side;
+	background-color: #71c0d8;
+}
+
+.footer {
+  grid-area: foot;
+}
